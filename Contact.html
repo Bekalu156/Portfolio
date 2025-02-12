@@ -2,23 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=\, initial-scale=1.0">
-    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="overlay"></div>
-  <div class="container">
-    <input type="text" placeholder="Your name" class="">
-    <input type="text" placeholder="Email">
-    <textarea name="Message" id=""></textarea>
-      
-   
-    <div class="buttons">
-        <a href="index.html">Home</a>
-        <a href="#contact">Contact</a>
-        <a href="About.html">About</a>
-      </div>
-      </div>
+    <div class="container-contact">
+        <h1 class="Contact-btn">Contact Us</h1>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button class="submit-btn" type="submit">Submit</button>
+        </form>
+
+        <div class="buttons">
+          <a href="index.html">Home</a>
+          <a href="Contact.html">Contact</a>
+          <a href="About.html">About</a>
+        </div>
+    </div>
 </body>
 </html>
