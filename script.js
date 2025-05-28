@@ -1,6 +1,5 @@
 function sendMail(event) {
-    event.preventDefault(); // Prevents form from refreshing
-
+    event.preventDefault(); 
     let parms = {
         user_name: document.getElementById("name").value, 
         user_email: document.getElementById("email").value,
@@ -19,7 +18,4 @@ function sendMail(event) {
         });
 }
 
-// Attach event listener to the form
-document.addEventListener("DOMContentLoaded", function() {
-    document.getElementById("contact-form").addEventListener("submit", sendMail);
-});
+
