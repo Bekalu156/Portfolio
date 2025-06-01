@@ -13,6 +13,15 @@
   <link rel="shortcut icon" href="img/photo_2025-02-06_21-45-54-modified.png">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "csuqXEt6s2I75MUQ_", // Your EmailJS Public Key
+            });
+        })();
+    </script>
 </head>
 <body>
   <div class="container">
@@ -20,10 +29,11 @@
       <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="About.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="Contact.html">Contact</a></li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#Services">Services</a></li>
+        <li><a href="#project">Projects</a></li>
+        <li><a href="#Contact">Contact</a></li>
       </ul>
       </nav>
       </div>
@@ -164,7 +174,6 @@
 </div>
 
   </div>
-
   <div id="skills" class="skills">
     <h2>Skills</h2>
     <div class="skill">
@@ -183,5 +192,112 @@
       <p>Skilled in JavaScript for dynamic web functionality and interactivity.</p>
     </div>
   </div>
-  </body>
+  
+
+   <div id="Services" class="services">
+    <h2>My Services</h2>
+    <p>As a dedicated website developer, I offer a range of services <br> to help you build a strong and effective online presence:</p>
+    <ul>
+        <div class="list">
+            <i id="fonts" class="fa-solid fa-paintbrush"></i>
+            <li>Responsive Design</li>
+            <p> Mobile-friendly layouts that work on all devices.</p>
+           <a href="Contact.html"><button class="list-button">
+                <span>Contact</span>
+              </button></a> 
+        </div>
+        <div class="list">
+            <i id="fonts" class="fa-solid fa-code"></i>
+            <li>Web Development</li>
+            <p>Custom, modern websites built for performance.</p>
+            <a href="Contact.html"><button class="list-button">
+              <span>Contact</span>
+            </button></a> 
+        </div>
+        
+        
+        <div class="list">
+            <i id="fonts" class="fa-brands fa-wordpress"></i>
+            <li>WordPress Development</li>
+            <p>Flexible and easy-to-manage WordPress sites.</p>
+            <a href="Contact.html"><button class="list-button">
+              <span>Contact</span>
+            </button></a> 
+        </div>
+    </ul>
+  </div>
+
+   <div id="About" class="about-section">
+            <img src="img/photo_2025-02-06_21-45-54-modified.png" alt="">
+            <h3>A bit about Me</h3>
+            <h1>Who Am I?</h1>
+            <p>Hi there! I’m Bekalu, an 18-year-old website developer with a deep passion for building clean, modern, and meaningful digital experiences.
+               I might be young, but I've already spent several years learning, experimenting, and creating with code—and I’m just getting started.
+               I discovered web development when I was 13 years Old and what began as a simple curiosity quickly turned into a full-blown passion. I started by building basic websites,
+               teaching myself HTML and CSS from online tutorials. Soon after, I dove into JavaScript, frameworks like React, and responsive design. </p>
+               <a href="Contact.html"><button class="Contact-btn">Contact</button></a>
+               <div class="all-fa-brands">
+                <i id="fa-linkedin-color" class="fa-brands fa-linkedin"></i>
+                <i id="fa-github-color" class="fa-brands fa-github"></i>
+                <i id="fa-telegram-color" class="fa-brands fa-telegram"></i>
+               </div>
+            </div>
+    <div id="project" class="projects">
+    <section class="recent-work">
+    <h1>My Projects</h1>
+    <p class="subtitle">Explore some of my latest projects that highlight my skills and creativity in web development.</p>
+    
+    <div class="work-container">
+      <div class="work-image">
+        <img src="img/Screenshot 2025-05-27 215657.png" alt="Portfolio Site Screenshot">
+        <a target="_blank" href="https://helper-company.netlify.app/"><button>Visit Website</button></a>
+      </div>
+      <div class="work-description">
+        <h2>Portfolio Site for Creative Agency</h2>
+        <p>
+          An engaging and visually stunning portfolio site that showcases the agency's work, complete with interactive elements to captivate visitors and encourage inquiries.
+          if You want visit the website click the image above.
+        </p>
+      </div>
+    </div>
+    
+  </section>
+    </div>
+
+    <div id="Contact" class="container-contact">
+      <div class="Address">
+       <h2>Get In Touch</h2>
+        <p>If you have any questions, want to collaborate, or just want to say hi, feel free to reach out!</p>
+       <div class="address1">
+        <i class="fa-solid fa-location-dot"></i>
+       <h3>ADDRESS</h3>
+       <p>Ethiopia,BahirDar</p>
+       </div>
+       <div class="address2">
+       <i class="fa-solid fa-envelope"></i>
+       <h3>Email</h3>
+       <p>bekaluendalamaw64@gmail.com</p>
+       </div>
+        <div class="address3">
+       <i class="fa-solid fa-phone"></i>
+       <h3>Phone</h3>
+       <p>+251934027373</p>
+       <p>+251998109065</p>
+        </div>
+       </div>
+        <form id="contact-form">
+            <h1 class="contact-btn">Contact Me</h1>
+            <input type="text" id="name" name="user_name" placeholder="FullName" required>
+
+            <input type="email" id="email" name="user_email" placeholder="Email" required>
+
+            <input type="text" id="subject" name="subject" placeholder="Subject" required>
+
+            
+            <textarea id="message" name="message" rows="4" placeholder="Message" required></textarea>
+
+            <button class="submit-btn" type="submit">Send</button>
+        </form>
+        <script src="script.js"></script>
+</body>
 </html>
