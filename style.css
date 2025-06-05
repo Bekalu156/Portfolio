@@ -16,7 +16,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
-
+.fa-icons{
+  display: flex;
+  position: fixed;
+  gap: 25px;
+  margin-left: -35%;
+}
 .container {
  
   width: 100%;
@@ -26,6 +31,11 @@ html {
   align-items: center;
   margin-left: 40px;
   overflow: hidden;
+}
+
+.container i{
+  color: #fff;
+  display: none;
 }
 
 .container .content {
@@ -82,7 +92,7 @@ html {
 }
 
 nav{
-  position: absolute;
+  position: fixed;
   top: 35px;
   left: 50%;
   transform: translateX(-50%);
@@ -908,132 +918,158 @@ nav ul li a.active {
     background: #264de4;
   }
 
-@media(max-width: 768px) {
-  body{
-     background: url('img/Desk\ PSD\,\ High\ Quality\ Free\ PSD\ Templates\ for\ Download\ _\ Freepik.jpg') no-repeat center center/cover;
+@media(max-width: 600px) {
+  nav ul {
+    flex-direction: row;
+    width: 100%;
+    margin-left: -70%;
+    margin-top: 10px;
   }
-  .container {
-    margin-left: 0;
+nav ul li {
+    flex: 1;
+    text-align: center;
+    font-size: 16px;
   }
-  
-  .container .content .cards .card {
-    width: 90%;
-    margin-right: 0;
-    border-radius: 30px;
-  }
-  
-  
   nav {
-    width: 100%;
-    padding-top: 10px;
-  }
-  
-  nav ul li {
-    font-size: 16px;
-  }
-  
-  .skills {
-    width: 100%;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .skills span {
-    margin-bottom: 5px;
-  }
-  .container-contact form {
-    width: 50%;
-  }
-  .project-section .project img {
-    width: 60%;
-    height: auto;
-    align-items: center;
-    margin-left: 17%;
-  }
-  .project-section .project {
-    width: 100%;
-    margin-left: 0;
-    margin-right: 0;
-    flex-direction: column;
-    align-items: center;
-  }
-  .project-section  h1{
-    font-size: 28px;
-    margin-left: 17%;
-  }
-  .project-section p {
-    width: 60%;
-    margin-left: 17%;
-    margin-right: auto;
-    font-size: 16px;
-  }
-  .project-section .project button {
-    left: 33%;
-    bottom: 30%;
-    margin-top: -50px;
-  }
-  .about-section {
-    margin-top: 50px;
-  }
-  .about-section img {
-    width: 15%;
-    margin-left: 42%;
-    margin-top: 20px;
-  }
-  .about-section h3 {
-    margin-left: 42%;
-  }
-  .about-section p {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .about-section .all-fa-brands {
-    margin-left: 40%;
-    margin-top: 10px;
-    display: flex;
-  }
-  .about-section .all-fa-brands i {
-    margin-right: 10px;
-  }
-  .about-section .Contact-btn {
-    margin-left: 42%;
-    margin-top: 10px;
-    display: inline-block;
-  }  
-  .services {
-    margin-left: 0;
-    margin-right: 0;
-    padding: 20px;
-  }
-  .services ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px;
+    position: fixed;
+    top: 0;
+}
 }
 
-  .services ul .list {
-    width: 30%;
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
+@media(max-width: 768px) {
+    nav ul li{
+      display: none;
+      background: none;
+    }
+    .container i{
+      display: block;
+      cursor: pointer;
+      margin-left: 20px;
+      font-size: 23px;
+    }
+    .fa-icons{
+       background: rgba(0, 0, 0, 0.5);
+       height: 100vh;
+       width: 20%;
+       margin-left: -30px;
+       border-radius: 10px;
+       flex-direction: column;
+    }
+    .fa-icons i{
+      display: block;
+      padding: 10px;
+      padding-left: 33px;
+      font-size: 30px;
+      margin-top: 10px;
+      margin-left: -30px;
+    }
+    .fa-icons a{
+      text-decoration: none;
+    }
+  .header h1 {
+    width: 100%;
+    font-size: 8vw;
+    margin-left: -15px;
+  }
 
+  .header p {
+    width: 90%;
+    margin: 10px auto;
+    font-size: 4vw;
+    text-align: center;
+    margin-right: 50px;
   }
-  .services p{
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 16px;
+  .card{
+    display: none;
   }
-  .services .list i{
+  .social-login-icons{
+    margin-left: 70px;
+  }
+  .skills{
+    top: 90%;
+    background: none;
+    display: block;
+  }
+  .skills h2{
     font-size: 20px;
   }
-  .services .list p{
-    font-size: 16px;
+  .skills .skill {
+    width: 80%;
+    margin-bottom: 15px;
     margin-top: 10px;
   }
-}
+   .about-section img {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-top: -50px;
+  }
+
+  .about-section h3,
+  .about-section .Contact-btn {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    display: block;
+    text-decoration: none;
+  }
+
+  .about-section .all-fa-brands {
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: -40px;
+  }
+  .about-section #fa-github-color{
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  .about-section p{
+    width: 90%;
+    margin: 10px auto;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .services{
+    margin-top: 80%;
+  }
+  .services ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .services ul .list {
+    width: 90%;
+    margin-left: 0;
+  }
+   .work-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .work-image img {
+    max-width: 90%;
+    margin-left: 0;
+  }
+
+  .work-description {
+    margin-left: 0;
+    text-align: center;
+  }
+   .container-contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .container-contact form {
+    width: 90%;
+    margin: 0 auto;
+  }
+} 
+
 
 .skills-section{
   padding: 100px 20px;
@@ -1266,3 +1302,27 @@ nav ul li a.active {
 .work-image button:hover {
   background-color: #264de4;
 }
+
+.container .closebtn {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    font-size: 36px;
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+    z-index: 2100;
+    display: none;
+  }
+
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+    color: white;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    z-index: 2100;
+
+  }

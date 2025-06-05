@@ -13,8 +13,7 @@
   <link rel="shortcut icon" href="img/photo_2025-02-06_21-45-54-modified.png">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-    
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>  
     <script type="text/javascript">
         (function(){
             emailjs.init({
@@ -24,20 +23,31 @@
     </script>
 </head>
 <body>
+
   <div class="container">
     <div class="navbar">
       <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">&times;</a> --->
+         <div class="fa-icons">
+        <a href="#Home"><i class="fa-solid fa-house-user"></i></a>
+        <li><a href="#Home">Home</a></li>
+        <a href="#About"><i class="fa-solid fa-address-card"></i></a>
         <li><a href="#About">About</a></li>
+        <a href="#skills"><i class="fa-solid fa-list-check"></i></a>
         <li><a href="#skills">Skills</a></li>
+        <a href="#Services"><i class="fa-solid fa-screwdriver-wrench"></i></a>
         <li><a href="#Services">Services</a></li>
+        <a href="#project"><i class="fa-solid fa-briefcase"></i></a>
         <li><a href="#project">Projects</a></li>
+        <a href="#Contact"><i class="fa-solid fa-phone"></i></a>
         <li><a href="#Contact">Contact</a></li>
+        </div>
       </ul>
       </nav>
       </div>
-    <div class="header">
+     <!-- <span class="hamburger" onclick="openSidebar()"><i class="fa-solid fa-sliders"></i></span> -->
+    <div id="Home" class="header">
       <h1>Hi I'm Bekalu</h1>
       <p>18-Year-Old Web Developer with a Passion for Building Clean, Modern Websites 
          I'm a self-taught web developer who loves turning ideas into sleek, functional websites.
@@ -298,6 +308,7 @@
 
             <button class="submit-btn" type="submit">Send</button>
         </form>
+        
         <script src="script.js"></script>
 </body>
 </html>
