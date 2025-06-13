@@ -1,5 +1,6 @@
 function sendMail(event) {
     event.preventDefault(); 
+
     let parms = {
         user_name: document.getElementById("name").value, 
         user_email: document.getElementById("email").value,
@@ -7,22 +8,17 @@ function sendMail(event) {
         message: document.getElementById("message").value,
     };
 
-    emailjs.send("service_m58o6we", "template_n6tvn8b", parms)
-        .then(function(response) {
-            console.log("SUCCESS!", response);
-            alert("Email sent successfully!");
-        })
-        .catch(function(error) {
-            console.error("FAILED...", error);
-            alert("Failed to send email. Please try again.");
-        });
-}
-
-
-  function openSidebar() {
-    document.getElementById("sidebar").style.width = "250px";
+   emailjs.send("service_cdcm8lh", "template_vfuzlvi", parms)
+    .then(function(response) {
+      console.log("SUCCESS!", response);
+      alert("Email sent successfully!");
+    })
+    .catch(function(error) {
+      console.error("FAILED...", error);
+      alert("Failed to send email. Please try again.");
+    });
   }
+ 
+    
+       
 
-  function closeSidebar() {
-    document.getElementById("sidebar").style.width = "0";
-  }
