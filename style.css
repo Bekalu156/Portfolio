@@ -18,9 +18,7 @@ html {
 }
 .fa-icons{
   display: flex;
-  position: fixed;
   gap: 25px;
-  margin-left: -48%;
 }
 .container {
  
